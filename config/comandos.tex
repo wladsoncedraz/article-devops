@@ -1,0 +1,33 @@
+% =====================================================================
+%  config/comandos.tex — comandos auxiliares
+%
+%  Citações no estilo da SBC:
+%    \cite{alongi2022}                       -> [Alongi et al. 2022]
+%    \cite{alongi2022,borges2024}            -> [Alongi et al. 2022, Borges et al. 2024]
+%    Alongi et al. \citeano{alongi2022}      -> Alongi et al. [2022]  (citação narrativa)
+% =====================================================================
+\makeatletter
+\newcommand{\citeano}[1]{%
+  \nocite{#1}%
+  \@ifundefined{b@#1}%
+    {[\textbf{?}]\@latex@warning{Citation `#1' undefined}}%
+    {\begingroup
+       % com hyperref, \b@chave guarda \hyper@@link[cite]{}{cite.chave}{rótulo}
+       \def\hyper@@link[##1]##2##3##4{##4}%
+       \protected@xdef\citeano@rotulo{\csname b@#1\endcsname}%
+     \endgroup
+     [\hyperlink{cite.#1}{\expandafter\citeano@ano\citeano@rotulo\@nil}]}}
+% o ano é a última palavra do rótulo ("Amaro et~al. 2026" -> 2026)
+\def\citeano@ano#1\@nil{\citeano@ultima#1 \@nil}
+\def\citeano@ultima#1 #2\@nil{%
+  \if\relax\detokenize{#2}\relax
+    \expandafter\@firstoftwo
+  \else
+    \expandafter\@secondoftwo
+  \fi
+  {#1}{\citeano@ultima#2\@nil}}
+\makeatother
+
+% O sbc-template.sty (v2017) escreve "Plavras-Chave"; corrigido aqui.
+\renewcommand{\palavraschave}[1]{%
+  \vspace{6pt}\small\linebreak\textbf{\textit{Palavras-chave---}} #1}

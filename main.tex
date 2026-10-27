@@ -1,0 +1,33 @@
+% !TEX program = pdflatex
+% =====================================================================
+%  Observabilidade aplicada à cultura DevOps na Administração Pública:
+%  desafios, benefícios e perspectivas
+%
+%  Documento principal (modelo SBC). Compile este arquivo.
+%  No Overleaf: Main document = main.tex | Compiler = pdfLaTeX
+% =====================================================================
+\documentclass[12pt]{article}
+
+\input{config/sbc}         % modelo oficial da SBC (sbc-template.sty)
+\input{config/pacotes}
+\input{config/comandos}
+\input{config/metadados}   % título e autores
+
+\begin{document}
+
+\maketitle
+
+\input{secoes/00-resumo}                  % a fazer
+\input{secoes/01-introducao}              % a fazer
+\input{secoes/02-revisao-bibliografica}   % EM ANDAMENTO
+\input{secoes/03-metodologia}             % a fazer
+\input{secoes/04-resultados-e-discussao}  % a fazer
+\input{secoes/05-consideracoes-finais}    % a fazer
+
+% Enquanto o texto ainda não cita as fontes, \nocite{*} lista todas as
+% referências do .bib. Quando o texto estiver citando, pode remover.
+\nocite{*}
+\bibliographystyle{sbc}
+\bibliography{referencias/referencias}
+
+\end{document}

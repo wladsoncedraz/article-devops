@@ -1,0 +1,18 @@
+# Saída de compilação do LaTeX
+build/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.lof
+*.lot
+main.pdf
+06-prisma.pdf

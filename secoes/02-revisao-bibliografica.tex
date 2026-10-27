@@ -1,0 +1,201 @@
+% =====================================================================
+%  2. Revisão bibliográfica / Fundamentação teórica — EM ANDAMENTO
+%  Explicar DevOps, observabilidade e Administração Pública com base na
+%  literatura escolhida.
+%  2.1 e 2.2: texto do rascunho draft/articles-selection.txt
+%  (PRISMA 2020, itens 5, 8, 16a e 16b).
+% =====================================================================
+\section{Revisão bibliográfica}\label{sec:revisao}
+
+% ---------------------------------------------------------------------
+% PRISMA 2020, item 5: critérios de elegibilidade
+% ---------------------------------------------------------------------
+\subsection{Critérios de elegibilidade dos estudos}\label{sec:criterios}
+
+Foram estabelecidos critérios de inclusão e exclusão com o objetivo de
+selecionar publicações pertinentes à investigação da observabilidade
+aplicada à cultura DevOps no contexto da Administração Pública.
+
+Como critérios de inclusão, consideraram-se artigos científicos publicados
+entre 2020 e 2026, nos idiomas português ou inglês, que abordassem
+fundamentos, práticas, capacidades ou desafios relacionados a DevOps,
+observabilidade ou transformação digital no setor público, apresentando
+contribuições relevantes para os objetivos da pesquisa
+(Tabela~\ref{tab:inclusao}). Os artigos devem atender a todos os critérios
+pertinentes.
+
+\begin{table}[htbp]
+\centering
+\caption{Critérios de inclusão}\label{tab:inclusao}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Código} & \textbf{Critério} \\
+\midrule
+CI1 & Artigos científicos publicados entre 2020 e 2026. \\
+CI2 & Publicações em português ou inglês, com texto integral acessível. \\
+CI3 & Estudos relacionados a DevOps, observabilidade ou transformação digital
+      na Administração Pública. \\
+CI4 & Estudos com contribuições relevantes e complementares aos eixos da
+      revisão. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Foram definidos como critérios de exclusão estudos sem aderência aos eixos
+temáticos, publicações restritas a soluções técnicas específicas sem
+contribuição identificável para a síntese proposta, trabalhos fora do
+recorte estabelecido e registros duplicados (Tabela~\ref{tab:exclusao}).
+
+\begin{table}[htbp]
+\centering
+\caption{Critérios de exclusão}\label{tab:exclusao}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\toprule
+\textbf{Código} & \textbf{Critério} \\
+\midrule
+CE1 & Estudos sem aderência suficiente ao problema de pesquisa. \\
+CE2 & Estudos com abordagem técnica muito específica, fora do recorte
+      adotado. \\
+CE3 & Estudos com contribuições predominantemente sobrepostas às de outros
+      trabalhos priorizados, sem acréscimo considerado essencial à síntese. \\
+CE4 & Publicações fora dos critérios de período, idioma ou tipo de
+      documento. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+A seleção foi orientada pela pertinência dos estudos à questão de pesquisa,
+considerando suas contribuições conceituais, técnicas e organizacionais.
+
+% ---------------------------------------------------------------------
+% PRISMA 2020, itens 8 (processo de seleção), 16a (seleção dos estudos)
+% e 16b (estudos excluídos)
+% PENDENTE (item 8): explicar como a equipe aplicou os critérios.
+% PENDENTE (item 16a): fluxograma com as quantidades reais.
+% ---------------------------------------------------------------------
+\subsection{Avaliação dos estudos}\label{sec:avaliacao}
+
+A Tabela~\ref{tab:aprovados} apresenta os estudos aprovados e a
+Tabela~\ref{tab:reprovados}, os estudos reprovados, com a justificativa de
+cada decisão.
+
+\begin{table}[htbp]
+\centering
+\caption{Estudos aprovados}\label{tab:aprovados}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{4.2cm}X@{}}
+\toprule
+\textbf{Estudo} & \textbf{Justificativa} \\
+\midrule
+\cite{giamattei2024}\newline \emph{Monitoring tools for DevOps and microservices}
+  & Analisa ferramentas de monitoramento em ambientes DevOps e microsserviços,
+    contribuindo para a compreensão das práticas de observabilidade, métricas,
+    logs e traces. \\
+\addlinespace
+\cite{plant2025}\newline \emph{Improving DevOps team performance through
+  context-capability coalignment}
+  & Investiga capacidades e desempenho de equipes DevOps em organizações
+    públicas, estabelecendo conexão direta entre cultura DevOps e
+    Administração Pública. \\
+\addlinespace
+\cite{azad2023}\newline \emph{DevOps critical success factors}
+  & Identifica fatores críticos de sucesso na adoção de DevOps, fundamentando
+    aspectos culturais, técnicos e organizacionais relevantes para o
+    estudo. \\
+\addlinespace
+\cite{amaro2025}\newline \emph{Mapping DevOps capabilities to the software
+  life cycle}
+  & Relaciona capacidades DevOps às etapas do ciclo de vida do software,
+    contribuindo para a fundamentação das práticas de automação,
+    monitoramento e melhoria contínua. \\
+\addlinespace
+\cite{figueredo2026}\newline \emph{Challenges of Digital Services in Public
+  Administration in the Era of Digital Transformation}
+  & Identifica barreiras institucionais, organizacionais e tecnológicas à
+    transformação digital na Administração Pública, contextualizando os
+    desafios de adoção de novas práticas de engenharia de software. \\
+\addlinespace
+\cite{amaro2026}\newline \emph{Strategic initiatives in DevOps adoption}
+  & Investiga a relação entre capacidades técnicas, métricas, processos e
+    iniciativas estratégicas na adoção de DevOps, contribuindo para a
+    discussão sobre integração entre cultura organizacional e práticas
+    tecnológicas. \\
+\addlinespace
+\cite{linjama2026}\newline \emph{Continuous Deployment Adoption: Insights From
+  a Public Sector Implementation}
+  & Apresenta um estudo de caso sobre implantação de entrega contínua no
+    setor público, oferecendo evidências sobre benefícios, desafios e
+    particularidades da adoção de práticas DevOps na Administração
+    Pública. \\
+\addlinespace
+\cite{kosinska2023}\newline \emph{Toward the Observability of Cloud-Native
+  Applications}
+  & Apresenta um mapeamento sistemático sobre observabilidade em aplicações
+    cloud-native, contribuindo para a fundamentação conceitual, abordagens
+    de implementação e perspectivas de observabilidade em sistemas
+    distribuídos. \\
+\addlinespace
+\cite{alongi2022}\newline \emph{Event-sourced, observable software
+  architectures}
+  & Aborda a observabilidade como propriedade arquitetural de software,
+    apresentando princípios e experiências práticas que complementam a
+    fundamentação técnica sobre sistemas observáveis. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Estudos reprovados}\label{tab:reprovados}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.2cm}
+                                >{\raggedright\arraybackslash}p{2.2cm}X@{}}
+\toprule
+\textbf{Estudo} & \textbf{Decisão} & \textbf{Justificativa} \\
+\midrule
+\cite{gall2022} & Não utilizar
+  & Duplicidade de tratamento direto dos fundamentos conceituais de DevOps já
+    escolhidos em outro artigo. \\
+\addlinespace
+\cite{hrusto2021} & Não utilizar
+  & Investiga uma solução específica de monitoramento autônomo e filtragem de
+    alertas, em vez de uma análise abrangente da adoção de
+    observabilidade. \\
+\addlinespace
+\cite{borges2024} & Não utilizar
+  & Concentra-se em experimentos e decisões técnicas de observabilidade com
+    injeção de falhas, um recorte arquitetural especializado. \\
+\addlinespace
+\cite{gomes2025} & Texto não recuperado
+  & É bastante relevante ao tema, porém não conseguimos acesso ao material
+    completo. \\
+\addlinespace
+\cite{kumar2025} & Texto não recuperado
+  & É bastante relevante ao tema, porém não conseguimos acesso ao material
+    completo. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ---------------------------------------------------------------------
+% Apresentar o conceito de DevOps, a integração entre desenvolvimento
+% e operações, automação, colaboração e melhoria contínua, fundamentando
+% com artigos selecionados.
+% ---------------------------------------------------------------------
+\subsection{Cultura DevOps e seus princípios}\label{sec:devops}
+
+% ---------------------------------------------------------------------
+% Explicar o conceito de observabilidade, a utilização de métricas,
+% logs e traces e sua relação com práticas DevOps.
+% ---------------------------------------------------------------------
+\subsection{Observabilidade de aplicações e infraestrutura}\label{sec:observabilidade}
+
+% ---------------------------------------------------------------------
+% Relacionar os conceitos anteriores com desafios do setor público,
+% como sistemas legados, limitações organizacionais, necessidades de
+% capacitação e continuidade dos serviços digitais, conforme as
+% evidências dos artigos.
+% ---------------------------------------------------------------------
+\subsection{DevOps e observabilidade na Administração Pública}\label{sec:setor-publico}
