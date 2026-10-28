@@ -1,6 +1,147 @@
 % =====================================================================
-%  4. Resultados e discussão — A FAZER
-%  Analisar os desafios, benefícios e perspectivas encontrados nas
-%  publicações.
+%  4. Resultados e discussão — EM ANDAMENTO
+%  PRISMA 2020: seleção (itens 16a e 16b) e caracterização (item 17, parcial).
+%  PENDENTE: consolidar os quantitativos por etapa e o fluxograma completo.
+%  PENDENTE: desenvolver a discussão dos desafios, benefícios e perspectivas.
 % =====================================================================
 \section{Resultados e discussão}\label{sec:resultados}
+
+\subsection{Seleção dos estudos}\label{sec:avaliacao}
+
+As decisões documentadas para esta revisão compreendem nove estudos
+aprovados (Tabela~\ref{tab:aprovados}), três estudos excluídos
+(Tabela~\ref{tab:reprovados}) e duas publicações com texto integral não
+recuperado (Tabela~\ref{tab:nao-recuperados}). O uso complementar do resumo
+de Gomes et al.~\citeano{gomes2025}, descrito na
+Seção~\ref{sec:fontes-complementares}, mantém a condição de texto integral
+não recuperado desse estudo e não altera o total de estudos aprovados.
+
+Os quantitativos das etapas de identificação e triagem e o fluxograma
+completo da seleção ainda dependem da consolidação dos registros de busca.
+
+{\footnotesize
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{4.2cm}
+                    p{\dimexpr\linewidth-4.2cm-2\tabcolsep\relax}@{}}
+\caption{Estudos aprovados}\label{tab:aprovados}\\
+\toprule
+\textbf{Estudo} & \textbf{Justificativa} \\
+\midrule
+\endfirsthead
+\caption[]{Estudos aprovados (continuação)}\\
+\toprule
+\textbf{Estudo} & \textbf{Justificativa} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\cite{giamattei2024}\newline \emph{Monitoring tools for DevOps and microservices}
+  & Analisa ferramentas de monitoramento em ambientes DevOps e microsserviços,
+    contribuindo para a compreensão das práticas de observabilidade, métricas,
+    logs e traces. \\
+\addlinespace
+\cite{plant2025}\newline \emph{Improving DevOps team performance through
+  context-capability coalignment}
+  & Investiga capacidades e desempenho de equipes DevOps em organizações
+    públicas, estabelecendo conexão direta entre cultura DevOps e
+    Administração Pública. \\
+\addlinespace
+\cite{azad2023}\newline \emph{DevOps critical success factors}
+  & Identifica fatores críticos de sucesso na adoção de DevOps, fundamentando
+    aspectos culturais, técnicos e organizacionais relevantes para o
+    estudo. \\
+\addlinespace
+\cite{amaro2025}\newline \emph{Mapping DevOps capabilities to the software
+  life cycle}
+  & Relaciona capacidades DevOps às etapas do ciclo de vida do software,
+    contribuindo para a fundamentação das práticas de automação,
+    monitoramento e melhoria contínua. \\
+\addlinespace
+\cite{figueredo2026}\newline \emph{Challenges of Digital Services in Public
+  Administration in the Era of Digital Transformation}
+  & Identifica barreiras institucionais, organizacionais e tecnológicas à
+    transformação digital na Administração Pública, contextualizando os
+    desafios de adoção de novas práticas de engenharia de software. \\
+\addlinespace
+\cite{amaro2026}\newline \emph{Strategic initiatives in DevOps adoption}
+  & Investiga a relação entre capacidades técnicas, métricas, processos e
+    iniciativas estratégicas na adoção de DevOps, contribuindo para a
+    discussão sobre integração entre cultura organizacional e práticas
+    tecnológicas. \\
+\addlinespace
+\cite{linjama2026}\newline \emph{Continuous Deployment Adoption: Insights From
+  a Public Sector Implementation}
+  & Apresenta um estudo de caso sobre implantação de entrega contínua no
+    setor público, oferecendo evidências sobre benefícios, desafios e
+    particularidades da adoção de práticas DevOps na Administração
+    Pública. \\
+\addlinespace
+\cite{kosinska2023}\newline \emph{Toward the Observability of Cloud-Native
+  Applications}
+  & Apresenta um mapeamento sistemático sobre observabilidade em aplicações
+    cloud-native, contribuindo para a fundamentação conceitual, abordagens
+    de implementação e perspectivas de observabilidade em sistemas
+    distribuídos. \\
+\addlinespace
+\cite{alongi2022}\newline \emph{Event-sourced, observable software
+  architectures}
+  & Aborda a observabilidade como propriedade arquitetural de software,
+    apresentando princípios e experiências práticas que complementam a
+    fundamentação técnica sobre sistemas observáveis. \\
+\end{longtable}
+}
+
+\begin{table}[H]
+\centering
+\caption{Estudos excluídos}\label{tab:reprovados}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{4.2cm}
+                                >{\raggedright\arraybackslash}p{2.2cm}X@{}}
+\toprule
+\textbf{Estudo} & \textbf{Decisão} & \textbf{Justificativa} \\
+\midrule
+\cite{gall2022}\newline \emph{Taking DevOps mainstream}
+  & Excluído
+  & Duplicidade de tratamento direto dos fundamentos conceituais de DevOps já
+    escolhidos em outro artigo. \\
+\addlinespace
+\cite{hrusto2021}\newline \emph{Closing the feedback loop in DevOps through
+  autonomous monitors in operations}
+  & Excluído
+  & Investiga uma solução específica de monitoramento autônomo e filtragem de
+    alertas, em vez de uma análise abrangente da adoção de
+    observabilidade. \\
+\addlinespace
+\cite{borges2024}\newline \emph{Informed and assessable observability design
+  decisions in cloud-native microservice applications}
+  & Excluído
+  & Concentra-se em experimentos e decisões técnicas de observabilidade com
+    injeção de falhas, um recorte arquitetural especializado. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Publicações com texto integral não recuperado}\label{tab:nao-recuperados}
+\footnotesize
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{4.2cm}X@{}}
+\toprule
+\textbf{Estudo} & \textbf{Situação e uso no artigo} \\
+\midrule
+\cite{gomes2025}\newline \emph{A systematic mapping study on observability of
+  microservices-based applications}
+  & Texto integral não recuperado. O resumo editorial é utilizado apenas
+    como referência conceitual complementar
+    (Seção~\ref{sec:fontes-complementares}); o estudo não integra o conjunto
+    dos nove estudos aprovados. \\
+\addlinespace
+\cite{kumar2025}\newline \emph{A systematic literature review for
+  investigating DevOps metrics to implement in software development
+  organizations}
+  & Texto integral não recuperado; o estudo não integra o conjunto dos
+    estudos aprovados. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\FloatBarrier

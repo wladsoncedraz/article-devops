@@ -32,8 +32,8 @@
 % artigo, o preâmbulo dele é ignorado (docmute) e o ambiente mytabular que ele
 % usa passa a ser este. O espaçamento (#1) e as colunas (#2) de lá valem só
 % para o PDF avulso: aqui a tabela é refeita na largura do texto, com letra
-% \scriptsize (8 pt). Se crescer demais, o adjustbox a reduz para a Tabela 5
-% continuar na página do título do apêndice.
+% \scriptsize (8 pt). Se crescer demais, o adjustbox a reduz para a primeira
+% tabela continuar na página do título do apêndice.
 \newenvironment{mytabular}[2][1]{%
   \scriptsize\setlength{\tabcolsep}{4pt}%
   \adjustbox{max totalheight=0.87\textheight, center}\bgroup
