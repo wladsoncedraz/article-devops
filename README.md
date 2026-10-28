@@ -24,7 +24,7 @@ Brasileira de Computação), no Projeto Integrador da Pós-graduação em DevOps
 | `referencias/referencias.bib` | referências (BibTeX, estilo da SBC) |
 | `config/` | pacotes, comandos, título e autores |
 | `sbc-template.sty`, `sbc.bst` | modelo oficial da SBC |
-| `secoes/06-prisma.tex` | lista de checagem PRISMA 2020 (documento separado, compila sozinho) |
+| `secoes/06-prisma.tex` | lista de checagem PRISMA 2020: entra no fim do artigo como apêndice e também compila sozinho |
 
 ## Andamento
 

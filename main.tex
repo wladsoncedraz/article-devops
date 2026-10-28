@@ -30,4 +30,14 @@
 \bibliographystyle{sbc}
 \bibliography{referencias/referencias}
 
+% Lista de checagem PRISMA 2020: o arquivo secoes/06-prisma.tex também
+% compila sozinho; aqui entram só as tabelas dele.
+\appendix
+\clearpage                  % o apêndice começa em página nova
+\raggedbottom               % não estica o espaço entre o título e a tabela
+\section{Lista de checagem PRISMA 2020}\label{apendice:prisma}
+\let\maketitle\relax        % o título do arquivo avulso não entra no artigo
+\floatplacement{table}{H}   % tabelas logo abaixo do título do apêndice
+\input{secoes/06-prisma}
+
 \end{document}

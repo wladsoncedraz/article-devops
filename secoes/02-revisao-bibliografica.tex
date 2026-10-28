@@ -150,34 +150,49 @@ cada decisão.
 \centering
 \caption{Estudos reprovados}\label{tab:reprovados}
 \footnotesize
-\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.2cm}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{4.2cm}
                                 >{\raggedright\arraybackslash}p{2.2cm}X@{}}
 \toprule
 \textbf{Estudo} & \textbf{Decisão} & \textbf{Justificativa} \\
 \midrule
-\cite{gall2022} & Não utilizar
+\cite{gall2022}\newline \emph{Taking DevOps mainstream}
+  & Excluído
   & Duplicidade de tratamento direto dos fundamentos conceituais de DevOps já
     escolhidos em outro artigo. \\
 \addlinespace
-\cite{hrusto2021} & Não utilizar
+\cite{hrusto2021}\newline \emph{Closing the feedback loop in DevOps through
+  autonomous monitors in operations}
+  & Excluído
   & Investiga uma solução específica de monitoramento autônomo e filtragem de
     alertas, em vez de uma análise abrangente da adoção de
     observabilidade. \\
 \addlinespace
-\cite{borges2024} & Não utilizar
+\cite{borges2024}\newline \emph{Informed and assessable observability design
+  decisions in cloud-native microservice applications}
+  & Excluído
   & Concentra-se em experimentos e decisões técnicas de observabilidade com
     injeção de falhas, um recorte arquitetural especializado. \\
 \addlinespace
-\cite{gomes2025} & Texto não recuperado
+\cite{gomes2025}\newline \emph{A systematic mapping study on observability of
+  microservices-based applications}
+  & Texto não recuperado
   & É bastante relevante ao tema, porém não conseguimos acesso ao material
     completo. \\
 \addlinespace
-\cite{kumar2025} & Texto não recuperado
+\cite{kumar2025}\newline \emph{A systematic literature review for
+  investigating DevOps metrics to implement in software development
+  organizations}
+  & Texto não recuperado
   & É bastante relevante ao tema, porém não conseguimos acesso ao material
     completo. \\
 \bottomrule
 \end{tabularx}
 \end{table}
+
+% ---------------------------------------------------------------------
+% As tabelas de seleção devem terminar antes da fundamentação teórica.
+% ---------------------------------------------------------------------
+\FloatBarrier
 
 % ---------------------------------------------------------------------
 % Apresentar o conceito de DevOps, a integração entre desenvolvimento
@@ -200,5 +215,6 @@ cada decisão.
 % ---------------------------------------------------------------------
 \subsection{DevOps e observabilidade na Administração Pública}\label{sec:setor-publico}
 
+% Contribuição de Virgílio: PR #1, commit 544f3fd4acf543c5b3ce5c5a4abe5d0154d3b57f.
+% O texto do arquivo abaixo foi preservado integralmente.
 \input{secoes/02-3-setor-publico}
-
