@@ -1,0 +1,60 @@
+% Fundamentação teórica: observabilidade de aplicações e infraestrutura.
+% Incluído após a subseção correspondente em 02-revisao-bibliografica.tex.
+
+Em aplicações distribuídas, compreender uma falha exige acompanhar o que
+acontece entre serviços, contêineres e componentes da infraestrutura.
+Indicadores isolados de funcionamento nem sempre explicam como essas
+partes afetam umas às outras. A observabilidade oferece meios para
+investigar esse comportamento a partir dos dados produzidos durante a
+execução do sistema. Kosińska et al.~\citeano{kosinska2023} relacionam sua
+importância à complexidade das aplicações \emph{cloud-native}, nas quais o
+diagnóstico depende de informações sobre a aplicação e seu ambiente de
+execução.
+
+Monitoramento e observabilidade se complementam. O monitoramento
+acompanha indicadores de saúde e desempenho, como consumo de CPU, memória
+e tempo de resposta. A observabilidade permite investigar os estados e
+eventos associados a esse comportamento. Alongi et al.~\citeano{alongi2022}
+tratam essa capacidade como uma propriedade arquitetural: o sistema
+precisa produzir informações que permitam compreender sua execução.
+Assim, identificar um aumento de latência e investigar os acontecimentos
+relacionados a ele são atividades próximas, mas com objetivos distintos.
+
+Essa investigação se apoia principalmente em métricas, logs e
+rastreamentos distribuídos. As métricas resumem características
+quantitativas, como utilização de recursos, disponibilidade e taxas de
+erro. Os logs registram eventos e informações de contexto, úteis para
+examinar falhas e atividades operacionais. Já os rastreamentos permitem
+acompanhar o percurso de uma requisição entre serviços, relacionando
+chamadas e tempos de execução. A análise conjunta desses sinais amplia as
+possibilidades de diagnóstico, sobretudo quando o problema envolve
+interações entre componentes \cite{kosinska2023,giamattei2024}.
+
+A escolha das ferramentas depende das informações necessárias e das
+características do sistema. Giamattei et al.~\citeano{giamattei2024}
+analisam soluções como Prometheus, Elasticsearch, Jaeger e Zipkin, além de
+integrações com plataformas de visualização como o Grafana. Nesse
+ecossistema, o OpenTelemetry oferece mecanismos de instrumentação e
+coleta de telemetria. Kosińska et al.~\citeano{kosinska2023} descrevem sua
+organização em componentes de recepção, processamento e exportação dos
+dados, que podem ser encaminhados a diferentes serviços de armazenamento
+e análise.
+
+As decisões de observabilidade também envolvem esforço de desenvolvimento
+e consumo de recursos. Ao explorar o uso de \emph{event sourcing}, Alongi
+et al.~\citeano{alongi2022} mostram como o registro de eventos e mudanças
+de estado pode apoiar a reconstrução do comportamento da aplicação.
+Essa capacidade exige planejamento arquitetural e trabalho adicional de
+implementação. Giamattei et al.~\citeano{giamattei2024} também destacam a
+necessidade de manter a instrumentação junto ao código e avaliar o
+impacto da coleta, especialmente no rastreamento distribuído.
+
+Para as equipes DevOps, o valor dessas informações está no uso que
+recebem durante o desenvolvimento e a operação. Dados de produção ajudam
+a investigar incidentes, acompanhar requisitos de nível de serviço e
+orientar mudanças na aplicação e na infraestrutura. A observabilidade
+sustenta, dessa forma, o retorno de informações operacionais às decisões
+de engenharia e à melhoria contínua. Sua contribuição para a
+confiabilidade depende da qualidade da instrumentação, da interpretação
+dos dados e da capacidade da equipe de agir sobre os problemas
+identificados \cite{kosinska2023,giamattei2024}.
