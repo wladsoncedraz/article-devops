@@ -32,14 +32,14 @@ Brasileira de Computação), no Projeto Integrador da Pós-graduação em DevOps
 |---|---|
 | Resumo | a fazer |
 | 1. Introdução | a fazer |
-| 2. Revisão bibliográfica | **em andamento**: 2.2 observabilidade e 2.3 setor público escritas; 2.1 cultura DevOps a desenvolver |
+| 2. Revisão bibliográfica | **em andamento**: 2.1 cultura DevOps, 2.2 observabilidade e 2.3 setor público escritas |
 | 3. Metodologia | **em andamento**: critérios, registro da seleção e fontes complementares; detalhes da busca e triagem pendentes |
 | 4. Resultados e discussão | **em andamento**: nove aprovados, três excluídos e dois textos não recuperados; fluxo completo e discussão pendentes |
 | 5. Considerações finais | a fazer |
 
 ## Organização da revisão e da seleção
 
-A seção 2 contém os três eixos teóricos: 2.1 Cultura DevOps e seus princípios,
+A seção 2 contém os três eixos teóricos: 2.1 Cultura DevOps e seus fundamentos,
 2.2 Observabilidade de aplicações e infraestrutura e 2.3 DevOps e observabilidade
 na Administração Pública. A numeração é definida pelos comandos LaTeX; os nomes
 dos arquivos de apoio não a determinam.
