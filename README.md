@@ -40,7 +40,7 @@ Brasileira de Computação), no Projeto Integrador da Pós-graduação em DevOps
 ## Organização da revisão e da seleção
 
 A seção 2 contém os três eixos teóricos: 2.1 Cultura DevOps e seus fundamentos,
-2.2 Observabilidade de aplicações e infraestrutura e 2.3 DevOps e observabilidade
+2.2 Observabilidade em Aplicações e Infraestrutura e 2.3 DevOps e observabilidade
 na Administração Pública. A numeração é definida pelos comandos LaTeX; os nomes
 dos arquivos de apoio não a determinam.
 
