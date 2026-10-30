@@ -57,3 +57,20 @@ consolidação dos registros de busca.
 
 - `\cite{alongi2022}` → [Alongi et al. 2022]
 - `Alongi et al. \citeano{alongi2022}` → Alongi et al. [2022]
+
+## Entrega isolada — Atividade Avaliativa 1
+
+Para compilar somente a revisão bibliográfica solicitada pelo IFMT:
+
+- **Overleaf:** selecionar `atividade-01.tex` como *Main document* e usar pdfLaTeX.
+- **Localmente:** executar `latexmk -pdf atividade-01.tex`.
+
+O arquivo `atividade-01.tex` reutiliza as três subseções existentes,
+mantém a numeração original da seção 2 e gera a bibliografia no estilo SBC
+apenas com as fontes citadas nesse recorte. Não inclui resumo, introdução,
+metodologia, resultados, considerações finais ou apêndice PRISMA.
+
+O `main.tex` permanece como entrada para o artigo completo em elaboração.
+Os dados de autoria em `config/metadados.tex` ainda são placeholders e
+precisam ser preenchidos pelos autores antes da submissão. As referências
+BibTeX originais, inclusive as dos nove estudos aprovados, são preservadas.
