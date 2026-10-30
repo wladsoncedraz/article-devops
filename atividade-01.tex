@@ -1,0 +1,22 @@
+% !TEX program = pdflatex
+% Atividade Avaliativa 1 (IFMT): revisão bibliográfica isolada.
+% Mantém a fonte e o padrão SBC do artigo, sem gerar o PDF no repositório.
+\documentclass[12pt]{article}
+
+\input{config/sbc}
+\input{config/pacotes}
+\input{config/comandos}
+\input{config/metadados}
+
+\begin{document}
+\maketitle
+
+% Preserva a numeração da seção 2 do artigo original.
+\setcounter{section}{1}
+\input{secoes/02-revisao-bibliografica}
+
+% Somente referências efetivamente citadas na revisão.
+\bibliographystyle{sbc}
+\bibliography{referencias/referencias}
+
+\end{document}
