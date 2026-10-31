@@ -1,0 +1,20 @@
+% !TEX program = pdflatex
+% Atividade Avaliativa 1 (IFMT): somente a revisao bibliografica.
+% Usa a mesma formatacao, metadados e referencias do artigo principal.
+\documentclass[12pt]{article}
+\input{config/sbc}
+\input{config/pacotes}
+\input{config/comandos}
+\input{config/metadados}
+
+\begin{document}
+\maketitle
+
+% Mantem a numeracao da Secao 2 do artigo completo.
+\setcounter{section}{1}
+\input{secoes/02-revisao-bibliografica}
+
+% Lista somente os itens efetivamente citados.
+\bibliographystyle{sbc}
+\bibliography{referencias/referencias}
+\end{document}

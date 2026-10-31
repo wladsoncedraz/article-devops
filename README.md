@@ -57,3 +57,16 @@ consolidação dos registros de busca.
 
 - `\cite{alongi2022}` → [Alongi et al. 2022]
 - `Alongi et al. \citeano{alongi2022}` → Alongi et al. [2022]
+
+## Atividade Avaliativa 1 — entrega independente
+
+Para compilar somente a revisão bibliográfica no modelo SBC, selecione
+`atividade-01.tex` como documento principal no Overleaf (pdfLaTeX) ou execute
+`latexmk -pdf atividade-01.tex` localmente. O arquivo reutiliza as seções 2.1,
+2.2 e 2.3 do artigo, a identificação atual dos cinco autores e apenas as
+referências efetivamente citadas nesse recorte. O `main.tex` continua sendo o
+documento principal do artigo completo.
+
+A entrada específica da atividade não inclui resumo, introdução, metodologia,
+resultados, considerações finais ou o apêndice PRISMA. A compilação deve ser
+conferida antes da submissão.
