@@ -1,26 +1,23 @@
 A disseminação de arquiteturas distribuídas e ecossistemas nativos em nuvem baseados em
-contêineres e microsserviços redefiniu os desafios de operação de software. Em sistemas
-dessa natureza, falhas raramente decorrem de defeitos isolados em componentes previsíveis,
-eles surgem principalmente de interações dinâmicas e dependências assíncronas entre
-diversos microsserviços. Nesse contexto, Kosińska e outros.\nocite{kosinska2023} enfatizam
-que manter a confiabilidade de ambientes cloud-native por exemplo depende da capacidade de
-compreender o comportamento das aplicações por meio de dados de telemetria gerados durante
-sua execução.
+contêineres e microsserviços redefiniu os desafios de operação de software. Nessas arquiteturas, falhas podem decorrer tanto de componentes isolados quanto de
+interações entre serviços e dependências assíncronas, o que amplia a complexidade do
+diagnóstico. Nesse contexto, Kosińska et al.~\citeano{kosinska2023} discutem a importância
+dos dados de telemetria gerados durante a execução das aplicações para a análise de
+ambientes \emph{cloud-native}.
 
 Fundamentada na Teoria de Controle clássica, a observabilidade é caracterizada pela
 capacidade de um sistema permitir a identificação de seu estado interno a partir da
-análise de suas saídas em um intervalo de tempo finito. Conforme explica
-Alongi\nocite{alongi2022}, a observabilidade se diferencia do monitoramento. Enquanto o
-monitoramento consiste em acompanhar periodicamente parâmetros predefinidos e emitir
-alertas diante de falhas já conhecidas (known unknowns), a observabilidade permite
-investigar comportamentos inesperados e problemas que não foram previstos anteriormente
-(unknown unknowns). Giamattei\nocite{giamattei2024} destaca que as ferramentas
-operacionais possibilitam a coleta dessas informações, enquanto a observabilidade busca
+análise de suas saídas em um intervalo de tempo finito. Na engenharia de software, Alongi et al.~\citeano{alongi2022} discutem a observabilidade
+como uma propriedade arquitetural relacionada à compreensão do comportamento do sistema.
+Enquanto o monitoramento acompanha indicadores e condições previamente definidos,
+a observabilidade favorece a investigação de comportamentos não antecipados a partir
+dos dados disponíveis. Giamattei et al.~\citeano{giamattei2024} destacam que as
+ferramentas operacionais possibilitam a coleta dessas informações, enquanto a observabilidade busca
 organizá-las e relacioná-las de maneira que auxiliem na compreensão dos problemas e na
 tomada de decisões pelas equipes de engenharia.
 
-A construção dessa visibilidade sobre o funcionamento dos sistemas está baseada em três
-pilares fundamentais da telemetria:
+Essa visibilidade pode ser construída pela análise conjunta de três tipos de sinais
+de telemetria:
 
 \begin{samepage}
 \subsubsection{Métricas}\label{sec:metricas}
@@ -50,14 +47,13 @@ arquiteturas distribuídas.
 \par
 \end{samepage}
 
-Ao analisarem o cenário tecnológico atual, Giamattei e Kosińska apontam uma crescente
-utilização de ferramentas abertas relacionadas ao ecossistema da Cloud Native Computing
-Foundation (CNCF), como Prometheus, Jaeger, Fluentd e Grafana. Nesse cenário, o
-OpenTelemetry ganha destaque por oferecer um padrão aberto de instrumentação, permitindo a
-coleta e a integração de dados de telemetria sem criar dependência de um único fornecedor
-(vendor lock-in). Alongi também destaca que o desenvolvimento de sistemas observáveis, por
-meio de abordagens como Event Sourcing, pode ampliar a capacidade de auditoria e facilitar
-a investigação de incidentes. Entretanto, essa implementação exige considerar aspectos
+Giamattei et al.~\citeano{giamattei2024} e Kosińska et al.~\citeano{kosinska2023}
+discutem ferramentas de coleta e análise de telemetria, como Prometheus, Jaeger, Fluentd
+e Grafana. O OpenTelemetry oferece mecanismos abertos de instrumentação e integração
+de telemetria que podem favorecer a interoperabilidade entre soluções e reduzir a
+dependência de um único fornecedor (\emph{vendor lock-in}). Alongi et
+al.~\citeano{alongi2022} discutem como abordagens como \emph{Event Sourcing} podem
+ampliar a capacidade de auditoria e facilitar a investigação de incidentes. Entretanto, essa implementação exige considerar aspectos
 como o esforço necessário para instrumentar as aplicações, o volume de dados armazenados e
 os custos envolvidos na operação dessas soluções.
 
