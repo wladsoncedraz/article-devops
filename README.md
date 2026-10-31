@@ -63,7 +63,7 @@ consolidação dos registros de busca.
 Para compilar somente a revisão bibliográfica no modelo SBC, selecione
 `atividade-01.tex` como documento principal no Overleaf (pdfLaTeX) ou execute
 `latexmk -pdf atividade-01.tex` localmente. O arquivo reutiliza as seções 2.1,
-2.2 e 2.3 do artigo, a identificação atual dos quatro autores e apenas as
+2.2 e 2.3 do artigo, a identificação atual dos cinco autores e apenas as
 referências efetivamente citadas nesse recorte. O `main.tex` continua sendo o
 documento principal do artigo completo.
 
